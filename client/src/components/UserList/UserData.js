@@ -7,8 +7,8 @@ import { useUserContext } from "../../utils/UserState";
 import { useSocketContext } from "../../utils/SocketState";
 
 const UserData = ({ user }) => {
-  const [{ userName, socketId, users }, chatDispatch] = useChatContext();
-  const [{ _id }, userDispatch] = useUserContext();
+  const [{ userName, socketId }] = useChatContext();
+  const [{ _id }] = useUserContext();
   const socket = useSocketContext();
   const invite = (event, user) => {
     event.preventDefault();

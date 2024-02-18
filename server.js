@@ -22,13 +22,10 @@ const io = require("socket.io")(http, {
   }
 });
 
-console.log(config.MONGODB_URI);
-
 mongoose
   .connect(process.env.MONGODB_URI || config.MONGODB_URI, {
     useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false
+    useUnifiedTopology: true
   })
   .then(console.log(`MongoDB connected ${"local DB"}`))
   .catch(err => console.log(err));

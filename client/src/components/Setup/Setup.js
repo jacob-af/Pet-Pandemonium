@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 import SetUpBoard from "../GameBoard/SetUpBoard";
 import { useGameContext } from "../../utils/GameState";
 import { useSocketContext } from "../../utils/SocketState";
@@ -31,6 +30,7 @@ function Setup() {
               id="pet-img"
               src={gameState.player.pets[gameState.petIndexToPlace].image}
               style={{ maxHeight: "230px", maxWidth: "230px" }}
+              alt=""
             />
           </div>
 

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 import UserTile from "../Tile/UserTile";
 import Pets from "../Pets/Pets";
@@ -7,7 +7,7 @@ import grass from "../../assets/img/grass_field.png";
 import { useGameContext } from "../../utils/GameState";
 
 const GameBoard = ({ which }) => {
-  const [state, dispatch] = useGameContext();
+  const [state] = useGameContext();
 
   return (
     <div
