@@ -15,7 +15,7 @@ const config = require(`./config/config.${process.env.NODE_ENV}.js`);
 
 const io = require("socket.io")(http, {
   cors: {
-    origin: config.CORS_ORIGIN,
+    origin: process.env.CORS_ORIGIN || config.CORS_ORIGIN,
     methods: ["GET", "POST"],
     allowedHeaders: ["my-custom-header"],
     credentials: true
