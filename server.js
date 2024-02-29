@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 const socketConnection = require("./config/socketConnection");
 const users = require("./config/users");
 const passport = require("./config/passport.js");
+const cors = require("cors");
 //const auth = require("./routes/auth.js");
 
 const app = express();
@@ -33,7 +34,11 @@ mongoose
 // Define middleware here/auth
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-
+app.use(
+  cors({
+    origin: "process.env.CORS_ORIGIN"
+  })
+);
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
