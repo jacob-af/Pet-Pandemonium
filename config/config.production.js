@@ -1,5 +1,5 @@
 const config = {
-  CORS_ORIGIN: "https://pet-pandemonium.herokuapp.com/",
+  CORS_ORIGIN: process.env.CORS_ORIGIN,
   MONGODB_URI: process.env.MONGODB_URI
 };
 
