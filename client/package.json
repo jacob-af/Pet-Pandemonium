@@ -2,7 +2,7 @@
   "name": "mern",
   "version": "0.1.0",
   "private": true,
-  "proxy": "pet-pandemonium-mpwyy5t5b-jacobs-projects-9ea49c59.vercel.app",
+  "proxy": "https://pet-pandemonium-server.vercel.app/",
   "dependencies": {
     "axios": "^0.18.0",
     "bootstrap": "^4.6.0",

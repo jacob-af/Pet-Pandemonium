@@ -4,7 +4,7 @@ const socketURI = (() => {
   if (window.location.host === "localhost") {
     return "http://localhost:3001";
   }
-  return window.location.href;
+  return "https://pet-pandemonium-server.vercel.app/";
 })();
 const socket = io(socketURI);
 
