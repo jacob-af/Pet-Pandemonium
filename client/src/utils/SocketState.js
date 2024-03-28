@@ -1,10 +1,11 @@
 import React, { createContext, useReducer, useContext } from "react";
 import io from "socket.io-client";
 const socketURI = (() => {
-  if (window.location.host === "localhost") {
+  console.log(window.location.host);
+  if (window.location.host === "localhost:3001") {
     return "http://localhost:3001";
   }
-  return "https://pet-pandemonium-server.vercel.app/";
+  return window.location.href;
 })();
 const socket = io(socketURI);
 

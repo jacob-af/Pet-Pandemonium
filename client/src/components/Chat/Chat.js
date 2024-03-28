@@ -1,6 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
-
-import UserList from "../UserList/UserList";
+import React, { useRef, useEffect } from "react";
 
 import "./chat.css";
 import { useSocketContext } from "../../utils/SocketState";
@@ -11,7 +9,7 @@ const Chat = () => {
   const inputRef = useRef();
   const socket = useSocketContext();
   const [{ room, userName, chatLog }, chatDispatch] = useChatContext();
-  const [user, userDispatch] = useUserContext();
+  const [user] = useUserContext();
 
   useEffect(() => {
     //socket = io(CONNECTION_PORT);
