@@ -1,8 +1,9 @@
+import "./Setup.css";
+
 import React from "react";
 import SetUpBoard from "../GameBoard/SetUpBoard";
 import { useGameContext } from "../../utils/GameState";
 import { useSocketContext } from "../../utils/SocketState";
-import "./Setup.css";
 
 function Setup() {
   const [gameState, gameDispatch] = useGameContext();
@@ -34,7 +35,7 @@ function Setup() {
             />
           </div>
 
-          <div className="row d-flex justify-content-between">
+          <div className="row d-flex justify-content-between mb-8">
             {gameState.gamePhase === "waiting" ? (
               <button
                 className="btn"
