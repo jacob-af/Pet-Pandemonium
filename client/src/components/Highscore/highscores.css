@@ -1,12 +1,13 @@
 .highscores {
-    background-color: #FDE1B1;
-    border-radius: 2rem;
-    margin-top: 2rem;
+  background-color: #fde1b1;
+  border-radius: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 6rem;
 }
 
 tr {
-    font-family: 'Fredoka One', cursive;
-   color: #ACA7DF;
-   font-weight: bold;
-   font-size: 2rem;
+  font-family: "Fredoka One", cursive;
+  color: #aca7df;
+  font-weight: bold;
+  font-size: 2rem;
 }

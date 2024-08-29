@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
-
 import "./highscores.css";
 
+import React, { useEffect, useState } from "react";
+
 import Score from "./Score";
+import axios from "axios";
 
 function Highscore() {
   const [highScores, setHighScores] = useState([]);
